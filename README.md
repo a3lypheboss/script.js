@@ -57,19 +57,24 @@ new school - loads as non-blocking, and ALL js files load asynchronously
 ``` js
 // load jquery and plugin at the same time. name it 'bundle'
 $script
-(['jquery.js', 'my-jquery-plugin.js'], 'bundle')
+(
+	[
+		'jquery.js'
+	,
+		'my-jquery-plugin.js'
+	]
+,
+	'bundle'
+)
 
-// load your usage
+//load your usage
 $script
-
 (
 	'my-app-that-uses-plugin.js'
 )
 
-
 /*--- in my-jquery-plugin.js ---*/
 $script
-
 .ready
 (
 	'bundle'
@@ -85,7 +90,6 @@ $script
 
 /*--- in my-app-that-uses-plugin.js ---*/
 $script
-
 .ready
 (
 	'bundle'
@@ -117,7 +121,6 @@ $script
 	}
 )
 
-
 $script
 (
 	[
@@ -134,7 +137,6 @@ $script
 		//foo.js & bar.js is ready
 	}
 )
-
 
 $script
 (
