@@ -1,10 +1,7 @@
-$script
-.js - Async JavaScript loader and dependency manager
+$script.js - Async JavaScript loader and dependency manager
 ------------------------------------------------------------------
 
-`$script
-.js` is an asynchronous JavaScript loader and dependency manager with an astonishingly impressive lightweight footprint. Like many other script loaders, $script
-.js allows you to load script resources on-demand from any URL and not block other resources from loading (like CSS and images). Furthermore, it's unique interface allows developers to work easily with even the most complicated dependencies, which can often be the case for large, complex web applications.
+`$script.js` is an asynchronous JavaScript loader and dependency manager with an astonishingly impressive lightweight footprint. Like many other script loaders, $script.js allows you to load script resources on-demand from any URL and not block other resources from loading (like CSS and images). Furthermore, it's unique interface allows developers to work easily with even the most complicated dependencies, which can often be the case for large, complex web applications.
 
 Browser Support
 ---------------
@@ -23,12 +20,11 @@ old school - blocks CSS, Images, AND JS!
 ``` html
 <SCRIPT SRC=jquery.js></SCRIPT>
 <SCRIPT SRC=my-jquery-plugin.js></SCRIPT>
-<script SRC=my-app-that-uses-plugin.js></script>
+<SCRIPT SRC=my-app-that-uses-plugin.js></SCRIPT>
 ```
 middle school - loads as non-blocking, but has multiple dependents
 ``` js
 $script
-
 (
 	'jquery.js'
 ,
